@@ -1,6 +1,6 @@
 import React from "react";
 import pf from "petfinder-client";
-import Pet from "./Pet.js";
+import Pet from "./Pet";
 
 const petfinder = pf({
   key: process.env.API_KEY,
@@ -48,7 +48,6 @@ class results extends React.Component {
           } else {
             breed = pet.breeds.breed;
           }
-
           return (
             <Pet
               key={pet.id}

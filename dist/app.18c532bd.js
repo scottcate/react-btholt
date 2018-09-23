@@ -23879,7 +23879,7 @@ var Pet = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = Pet;
-},{"react":"..\\node_modules\\react\\index.js","@reach/router":"..\\node_modules\\@reach\\router\\es\\index.js"}],"results.js":[function(require,module,exports) {
+},{"react":"..\\node_modules\\react\\index.js","@reach/router":"..\\node_modules\\@reach\\router\\es\\index.js"}],"Results.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -23896,7 +23896,7 @@ var _petfinderClient = require("petfinder-client");
 
 var _petfinderClient2 = _interopRequireDefault(_petfinderClient);
 
-var _Pet = require("./Pet.js");
+var _Pet = require("./Pet");
 
 var _Pet2 = _interopRequireDefault(_Pet);
 
@@ -23965,7 +23965,6 @@ var results = function (_React$Component) {
           } else {
             breed = pet.breeds.breed;
           }
-
           return _react2.default.createElement(_Pet2.default, {
             key: pet.id,
             name: pet.name,
@@ -23984,7 +23983,7 @@ var results = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = results;
-},{"react":"..\\node_modules\\react\\index.js","petfinder-client":"..\\node_modules\\petfinder-client\\index.js","./Pet.js":"Pet.js"}],"Carousel.js":[function(require,module,exports) {
+},{"react":"..\\node_modules\\react\\index.js","petfinder-client":"..\\node_modules\\petfinder-client\\index.js","./Pet":"Pet.js"}],"Carousel.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -24080,7 +24079,7 @@ var Carousel = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = Carousel;
-},{"react":"..\\node_modules\\react\\index.js"}],"details.js":[function(require,module,exports) {
+},{"react":"..\\node_modules\\react\\index.js"}],"Details.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -24402,13 +24401,13 @@ var _petfinderClient2 = _interopRequireDefault(_petfinderClient);
 
 var _SearchContext = require("./SearchContext");
 
-var _results = require("./results.js");
+var _Results = require("./Results");
 
-var _results2 = _interopRequireDefault(_results);
+var _Results2 = _interopRequireDefault(_Results);
 
-var _details = require("./details.js");
+var _Details = require("./Details");
 
-var _details2 = _interopRequireDefault(_details);
+var _Details2 = _interopRequireDefault(_Details);
 
 var _SearchParams = require("./SearchParams.js");
 
@@ -24513,8 +24512,8 @@ var App = function (_React$Component) {
           _react2.default.createElement(
             _router.Router,
             null,
-            _react2.default.createElement(_results2.default, { path: "/" }),
-            _react2.default.createElement(_details2.default, { path: "/details/:id" }),
+            _react2.default.createElement(_Results2.default, { path: "/" }),
+            _react2.default.createElement(_Details2.default, { path: "/details/:id" }),
             _react2.default.createElement(_SearchParams2.default, { path: "/search-params" })
           )
         )
@@ -24526,7 +24525,7 @@ var App = function (_React$Component) {
 }(_react2.default.Component);
 
 (0, _reactDom.render)(_react2.default.createElement(App, null), document.getElementById("root"));
-},{"react":"..\\node_modules\\react\\index.js","react-dom":"..\\node_modules\\react-dom\\index.js","@reach/router":"..\\node_modules\\@reach\\router\\es\\index.js","petfinder-client":"..\\node_modules\\petfinder-client\\index.js","./SearchContext":"SearchContext.js","./results.js":"results.js","./details.js":"details.js","./SearchParams.js":"SearchParams.js"}],"..\\node_modules\\parcel-bundler\\src\\builtins\\hmr-runtime.js":[function(require,module,exports) {
+},{"react":"..\\node_modules\\react\\index.js","react-dom":"..\\node_modules\\react-dom\\index.js","@reach/router":"..\\node_modules\\@reach\\router\\es\\index.js","petfinder-client":"..\\node_modules\\petfinder-client\\index.js","./SearchContext":"SearchContext.js","./Results":"Results.js","./Details":"Details.js","./SearchParams.js":"SearchParams.js"}],"..\\node_modules\\parcel-bundler\\src\\builtins\\hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -24555,7 +24554,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '51750' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '54845' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
