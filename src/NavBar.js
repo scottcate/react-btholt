@@ -32,7 +32,7 @@ const NavLink = styled(Link)`
 
 const NavBar = () => (
   <Container>
-    <NavLink to="/">Adopt Me!</NavLink>
+    <NavLink to="/">Adopt Me Please!</NavLink>
     <NavLink to="search-params">
       <SpyGlass aria-label="search" role="img">
         🔍

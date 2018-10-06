@@ -1,7 +1,7 @@
 import React from "react";
-import { render } from "react-dom";
 import { Router } from "@reach/router";
 import pf from "petfinder-client";
+import Loadable from "react-loadable";
 import { Provider } from "./SearchContext";
 import SearchParams from "./SearchParams";
 import Results from "./Results";
@@ -91,4 +91,4 @@ class App extends React.Component {
   }
 }
 
-render(<App />, document.getElementById("root"));
+export default App;
